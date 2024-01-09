@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fjalla+One&family=Varela+Round&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bgImg {
+  background: url(https://www.racksolutions.com/news//app/uploads/AdobeStock_87909563.jpg)
+    no-repeat center;
+  /* background-size: contain; */
+}
+.h1 {
+  font-weight: 600;
+
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #fff;
+  color: white;
+  text-shadow: 0 0 60px rgba(5, 5, 169, 0.59);
+  font-family: "Archivo Black", sans-serif;
+
+  animation: anime 1s infinite alternate;
+}
+@keyframes anime {
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+.wow {
+  backdrop-filter: blur(5px);
+}
+/* .h {
+  font-stretch: condensed;
+}
+.h:hover {
+  font-stretch: wider;
+} */
+.h {
+  -webkit-text-stroke: 1px #fff;
+  font-family: "Archivo Black", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+.p {
+  font-family: "Archivo Black", sans-serif;
+}
+.ani{
+  text-shadow: 0, 2px rgba(5, 5, 169, 0.631);
+  animation: anim 2s infinite alternate;
+}
+@keyframes anim {
+  100% {
+    text-shadow: 0, 2px rgba(169, 49, 5, 0.782);
+    color: transparent;
+  }
+}
