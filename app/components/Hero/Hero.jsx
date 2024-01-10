@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 const Hero = () => {
   return (
     <div className="bgImg  relative h-screen">
-      <div className="absolute w-full h-screen bg-black/90">
+      <div className="absolute w-full h-screen bg-black/80">
         <Navbar />
         <div className="w-full  h-full text-white flex  flex-col items-center justify-center">
           <Image
