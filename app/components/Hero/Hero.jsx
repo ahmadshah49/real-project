@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="flex text-sm sm:text-[12px] gap-1 items-center">
               <FaPhoneAlt />
               <span className="text-base max-sm:text-[12px]">
-                <p className="text-xs max-sm:text-[8px]">0300 8652993</p>
+                <p className="text-xs max-sm:text-[12px]">0300 8652993</p>
                 {/* <p className="text-xs sm:text-[10px]">0323 1110777</p> */}
               </span>
             </div>
