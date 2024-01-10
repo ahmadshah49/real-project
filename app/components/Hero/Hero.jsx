@@ -9,7 +9,9 @@ const Hero = () => {
         {/* <Navbar /> */}
         <div className="w-full  h-full text-white flex  flex-col items-center justify-center">
           <Image
-            src={"/logo.png"}
+            src={
+              "http://login.galaxyisp.com/assets/images/final/c0bea740b3447.png"
+            }
             width={500}
             height={500}
             className="max-sm:w-64"
