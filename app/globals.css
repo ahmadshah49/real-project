@@ -1,16 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fjalla+One&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,400;0,500;0,600;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Varela+Round&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.bgImg {
-  background: url(https://www.racksolutions.com/news//app/uploads/AdobeStock_87909563.jpg)
-    no-repeat center/cover;
-  /* height: 100vh; */
+/* .bgImg {
+  background-image: url("../public/bg.jpg") no-repeat;
+  height: 100vh;
+} */
+.logo {
+  background: url(../public/logo.PNG) no-repeat center/cover;
+  height: 100vh;
   /* background-size: contain; */
 }
+
+.box2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    312deg,
+    rgba(240, 161, 14, 0.634) 0%,
+    rgba(246, 108, 138, 0.688) 100%
+  );
+  border-radius: 100%;
+  /* transform: translate(240px, -90%); */
+  animation: color-change-3x 18s linear infinite alternate-reverse backwards;
+}
+@keyframes color-change-3x {
+  0% {
+    background: #d1ee7a;
+    transform: translate(190%, -120%);
+  }
+  100% {
+    background: #fdb692;
+    /* transform: translate(170%, 50%); */
+  }
+}
+
+.box5 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    312deg,
+    rgba(194, 122, 224, 0.53) 0%,
+    rgba(108, 222, 237, 0.74) 100%
+  );
+  border-radius: 100%;
+  transform: translate(40%, -100%);
+  animation: color-change-6x 28s linear infinite alternate backwards;
+}
+@keyframes color-change-6x {
+  0% {
+    background: #64e3b9;
+  }
+  100% {
+    background: #e8a786;
+  }
+}
+
 .h1 {
   font-weight: 600;
 
@@ -31,19 +77,24 @@
 .wow {
   backdrop-filter: blur(5px);
 }
-/* .h {
-  font-stretch: condensed;
+.wow2 {
+  backdrop-filter: blur(10px);
 }
-.h:hover {
-  font-stretch: wider;
-} */
+.wow3 {
+  backdrop-filter: blur(100px);
+}
+
 .h {
   -webkit-text-stroke: 1px #fff;
   font-family: "Archivo Black", sans-serif;
   transition: all 0.4s ease-in-out;
 }
+.hebo {
+  font-family: "Heebo", sans-serif;
+}
+
 .p {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 .ani {
   box-shadow: 0, 2px rgba(5, 5, 169, 0.631);

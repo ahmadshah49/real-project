@@ -1,35 +1,83 @@
-import Image from "next/image";
-import Navbar from "../Navbar/Navbar";
+"use client";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import Slider from "../Slider/Slider";
 
 const Hero = () => {
   return (
-    <div className="bgImg  relative h-screen">
-      <div className="absolute w-full h-screen bg-black/80">
-        <Navbar />
-        <div className="w-full  h-full text-white flex  flex-col items-center justify-center">
-          <Image
-            src={"/logo.PNG"}
-            width={500}
-            height={500}
-            className="max-sm:w-64"
-          />
-          {/* <h2 className="text-4xl text-transparent  h font-medium my-4">
-            Galaxy ISP(Pvt) Limited.
-          </h2> */}
-          <p className="text-center px-2 max-md:w-full text-sm w-[32%] max-sm:w-full p">
-            " Race Online Limited, One of the fastest growing ISP in the
-            industry to provide Catv & internet connectivity to various grades
-            of customers "
-          </p>
-          <div className="my-6  font-bold rounded-2xl wow animate-bounce bg-red-600/40  py-4 px-2">
-            <button>We're Coming soon</button>
-          </div>
-          <div className="w-full text-center bg-black/40 px-4  absolute text-xs flex  items-center justify-center gap-4  bottom-0 text-white">
-            <h2 className="text-xs sm:text-[12px] my-4">
-              Galaxy | ISP & CATV | Copyright 2024 | All Rights Reserved.
-            </h2>
-          </div>
-        </div>
+    <div className=" color-change-2x relative overflow-hidden w-full bg-[#efefef]  h-[80vh] max-sm:h-screen">
+      <div className="box2 " />
+      <div className="box5 " />
+
+      <div className="absolute inset-0 wow3 flex items-center   ">
+        <Swiper
+          className="w-full max-sm:h-[100vh] h-[80vh]"
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <Slider
+              title={"Galaxy ISP(Pvt) Limited."}
+              pera={
+                " Race Online Limited, One of the fastest growing ISP in the Faisalabad to provide Catv & internet connectivity."
+              }
+              src={"/logo.PNG"}
+              width={400}
+              height={400}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slider
+              title={"Gateway to Digital Connectivity"}
+              pera={
+                "Step through the Gateway to Digital Connectivity, where seamless internet access meets limitless possibilities. "
+              }
+              src={"/isp.png"}
+              width={600}
+              height={600}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slider
+              title={"Constant Companion, 24/7"}
+              pera={
+                "Meet the 'Constant Companion'  our commitment to providing 24/7 support. Just like the reliable presence of a trusted friend.  "
+              }
+              src={"/24.png"}
+              width={400}
+              height={400}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slider
+              title={"Wi-Fi Wonders for Family"}
+              pera={
+                "Elevate family experience: potent Wi-Fi for seamless streaming, smooth browsing and uninterrupted connections."
+              }
+              width={500}
+              height={500}
+              src={"/family.png"}
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
