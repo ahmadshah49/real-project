@@ -40,7 +40,7 @@ const Navbar = () => {
               <a href="#services">Services</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-              <a href="#support">Terms & Conditons</a>
+              <Link href={"/terms"}>Terms & Conditons</Link>
             </li>
           </ul>
           <div onClick={() => setNav((prev) => !prev)} className="md:hidden">

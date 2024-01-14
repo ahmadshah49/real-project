@@ -15,7 +15,10 @@ import Slider from "../Slider/Slider";
 
 const Hero = () => {
   return (
-    <div className=" color-change-2x relative overflow-hidden w-full bg-[#efefef]  h-[80vh] max-sm:h-screen">
+    <div
+      id="home"
+      className=" color-change-2x relative overflow-hidden w-full bg-[#efefef]  h-[80vh] max-sm:h-screen"
+    >
       <div className="box2 " />
       <div className="box5 " />
 
