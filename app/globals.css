@@ -7,6 +7,9 @@
   background-image: url("../public/bg.jpg") no-repeat;
   height: 100vh;
 } */
+* {
+  scroll-behavior: smooth;
+}
 .logo {
   background: url(../public/logo.PNG) no-repeat center/cover;
   height: 100vh;

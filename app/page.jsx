@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 import Services from "./components/Service/Service";
 import Pricing from "./components/Pricing/Pricing";
@@ -11,11 +10,9 @@ export default function Home() {
     <>
       {/* <Main /> */}
 
-      <Navbar />
       <Hero />
       <Services />
       <Pricing />
-      <Footer />
     </>
   );
 }
