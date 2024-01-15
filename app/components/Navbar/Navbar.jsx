@@ -31,13 +31,13 @@ const Navbar = () => {
           </div>
           <ul className="flex max-md:hidden font-bold">
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-              <a href="#home">Home</a>
+              <a href="/#home">Home</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-              <a href="#prices">Prices</a>
+              <a href="/#prices">Prices</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-              <a href="#services">Services</a>
+              <a href="/#services">Services</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
               <Link href={"/terms"}>Terms & Conditons</Link>
