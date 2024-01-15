@@ -43,7 +43,11 @@ const Footer = () => {
           <h1 className="font-bold my-2 text-xl text-[#E77A18]">About</h1>
           <div>
             <div className="flex py-1 items-center gap-2">
-              <MdLocalPhone size={25} /> <span>041 2638793</span>
+              <MdLocalPhone size={25} />{" "}
+              <div className="flex flex-col">
+                <span>041 2638793</span>
+                <span>0323 1110777</span>
+              </div>
             </div>
             <div className="flex  py-1 items-center gap-2">
               <MdEmail size={25} /> <span>sohailmashraf@gmail.com</span>

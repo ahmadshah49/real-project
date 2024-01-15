@@ -17,11 +17,8 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className=" color-change-2x relative overflow-hidden w-full bg-[#efefef]  h-[80vh] max-sm:h-screen"
+      className=" color-change-2x relative overflow-hidden w-full   h-[80vh] max-sm:h-screen"
     >
-      <div className="box2 " />
-      <div className="box5 " />
-
       <div className="absolute inset-0 wow3 flex items-center   ">
         <Swiper
           className="w-full max-sm:h-[100vh] h-[80vh]"
@@ -29,7 +26,7 @@ const Hero = () => {
           spaceBetween={30}
           slidesPerView={1}
           navigation
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 10000, disableOnInteraction: false }}
           loop={true}
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
@@ -38,11 +35,11 @@ const Hero = () => {
         >
           <SwiperSlide>
             <Slider
-              title={"Galaxy ISP(Pvt) Limited."}
+              title={"Galaxy"}
               pera={
                 " Race Online Limited, One of the fastest growing ISP in the Faisalabad to provide Catv & internet connectivity."
               }
-              src={"/logo.PNG"}
+              src={"/logo2.jpg"}
               width={400}
               height={400}
             />

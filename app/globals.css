@@ -15,6 +15,17 @@
   height: 100vh;
   /* background-size: contain; */
 }
+.imgup {
+  animation: imgup 0.7s ease-in-out infinite alternate;
+}
+.imgdown {
+  animation: imgup 0.7s ease-in-out infinite alternate-reverse;
+}
+@keyframes imgup {
+  to {
+    transform: translatey(-10px);
+  }
+}
 
 .box2 {
   width: 400px;
