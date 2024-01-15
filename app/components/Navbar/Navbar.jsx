@@ -61,8 +61,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed top-0 left-0 px-4 lg:hidden h-screen w-[60%] bg-black/20 bg-white/80  transition-all ease-in-out delay-150 z-50"
-            : "fixed top-0 -left-[100%] lg:hidden h-screen w-[60%]   bg-black/20 bg-white/80  transition-all ease-in-out delay-150 z-50"
+            ? "fixed top-0 left-0 px-4 lg:hidden h-screen w-[60%]  bg-white/80  transition-all ease-in-out delay-150 z-50"
+            : "fixed top-0 -left-[100%] lg:hidden h-screen w-[60%]    bg-white/80  transition-all ease-in-out delay-150 z-50"
         }
       >
         <div>
