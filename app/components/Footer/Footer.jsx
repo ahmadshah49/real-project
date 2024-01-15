@@ -18,22 +18,25 @@ const Footer = () => {
           <h1 className="font-bold my-2 text-xl text-[#E77A18]">Links</h1>
           <ul>
             <li className="py-1">
-              <a className="hover:text-[#E77A18]" href="#home">
+              <a className="hover:text-[#E77A18] font-semibold" href="#home">
                 Home
               </a>
             </li>
             <li className="py-1">
-              <a className="hover:text-[#E77A18]" href="#prices">
+              <a className="hover:text-[#E77A18] font-semibold " href="#prices">
                 Prices
               </a>
             </li>
             <li className="py-1">
-              <a className="hover:text-[#E77A18]" href="#services">
+              <a
+                className="hover:text-[#E77A18] font-semibold"
+                href="#services"
+              >
                 Services
               </a>
             </li>
             <li className="py-1">
-              <a className="hover:text-[#E77A18]" href="/terms">
+              <a className="hover:text-[#E77A18] font-semibold" href="/terms">
                 Terms & Conditons{" "}
               </a>
             </li>
@@ -45,16 +48,17 @@ const Footer = () => {
             <div className="flex py-1 items-center gap-2">
               <MdLocalPhone size={25} />{" "}
               <div className="flex flex-col">
-                <span>041 2638793</span>
-                <span>0323 1110777</span>
+                <span className="font-semibold">041 2638793</span>
+                <span className="font-semibold">0323 1110777</span>
               </div>
             </div>
             <div className="flex  py-1 items-center gap-2">
-              <MdEmail size={25} /> <span>sohailmashraf@gmail.com</span>
+              <MdEmail size={25} />{" "}
+              <span className="font-semibold">galaxyisp9@gmail.com</span>
             </div>
             <div className="flex py-1 items-center gap-2">
               <IoLocationSharp size={25} />{" "}
-              <span>
+              <span className="font-semibold">
                 office: p-1087, 1st Floor ,Lal Mills Chowk,Factory
                 Area,Faisalabad{" "}
               </span>

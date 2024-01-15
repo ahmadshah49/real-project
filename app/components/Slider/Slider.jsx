@@ -3,7 +3,7 @@ import React from "react";
 
 const Slider = ({ title, pera, src, width, height }) => {
   return (
-    <div className=" px-4 w-full h-full flex max-sm:flex-col  items-center justify-center">
+    <div className="bgImg px-4 w-full h-full flex max-sm:flex-col  items-center justify-center">
       <div className="w-[50%] px-6 flex flex-col justify-center max-sm:w-full">
         <h1 className="max-sm:text-5xl  max-md:text-5xl  lg:text-7xl py-4 text-[#E77A18] font-extrabold">
           {title}

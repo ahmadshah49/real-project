@@ -12,8 +12,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Slider from "../Slider/Slider";
-
+import Image from "next/image";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
 const Hero = () => {
+  let img = useRef(null);
+  useEffect(() => {
+    
+  })
+  
   return (
     <div
       id="home"
@@ -33,8 +40,17 @@ const Hero = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          <SwiperSlide>
-            <Slider
+          <SwiperSlide className=" max-sm:my-auto h-full w-full flex items-center justify-center">
+            <Image
+              src={"/Frame.svg"}
+              width={1500}
+              height={1500}
+              className="w-full h-full mx-auto max-sm:h-[50%]"
+            />
+            <h1 className="text-4xl text-[#E77A18]  font-black line-height-8 px-4">
+              Most Popular Internet Service Provider Company in Faisalabad
+            </h1>
+            {/* <Slider
               title={"Galaxy"}
               pera={
                 " Race Online Limited, One of the fastest growing ISP in the Faisalabad to provide Catv & internet connectivity."
@@ -42,7 +58,7 @@ const Hero = () => {
               src={"/logo2.jpg"}
               width={400}
               height={400}
-            />
+            /> */}
           </SwiperSlide>
           <SwiperSlide>
             <Slider
