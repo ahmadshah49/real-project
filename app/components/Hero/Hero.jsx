@@ -14,11 +14,8 @@ import "swiper/css/scrollbar";
 import Slider from "../Slider/Slider";
 import Image from "next/image";
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+let timeline=gsap.timeline();
 const Hero = () => {
-  let img = useRef(null);
-  useEffect(() => {});
-
   return (
     <div
       id="home"

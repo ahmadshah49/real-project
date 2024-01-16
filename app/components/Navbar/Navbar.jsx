@@ -89,6 +89,9 @@ const Navbar = () => {
               <a href="/#home">Home</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <a href="#about">About</a>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
               <a href="/#prices">Prices</a>
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
@@ -96,6 +99,9 @@ const Navbar = () => {
             </li>
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
               <Link href={"/terms"}>Terms & Conditons</Link>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <Link href={"#"}>Contact us</Link>
             </li>
           </ul>
         </div>
