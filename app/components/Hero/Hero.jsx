@@ -17,10 +17,8 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 const Hero = () => {
   let img = useRef(null);
-  useEffect(() => {
-    
-  })
-  
+  useEffect(() => {});
+
   return (
     <div
       id="home"

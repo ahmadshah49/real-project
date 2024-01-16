@@ -6,15 +6,9 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="border-t px-8 mt-4 border-[#E77A18]">
-      <div className="grid  lg:grid-cols-3 md:grid-cols-3 py-4 items-center justify-center gap-4 ">
-        <div className="">
-          <Image src={"/logo.PNG"} width={50} height={50} alt="logo" />
-          <h2 className="text-lg font-bold text-[#E77A18] max-sm:py-4">
-            Galaxy ISP (pvt) Limited.®
-          </h2>
-        </div>
-        <div className="">
+    <div className="border-t  px-8 mt-4 border-[#E77A18]">
+      <div className="grid  lg:grid-cols-3   md:grid-cols-3 py-4 items-center justify-center gap-4 ">
+        <div className="lg:mx-auto ">
           <h1 className="font-bold my-2 text-xl text-[#E77A18]">Links</h1>
           <ul>
             <li className="py-1">
@@ -42,7 +36,20 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="lg:mx-auto">
+          <Image
+            src={"/logo.PNG"}
+            width={150}
+            className="w-40"
+            height={150}
+            alt="logo"
+          />
+          <h2 className="text-xl font-bold text-[#E77A18] max-sm:py-4">
+            Galaxy ISP Private Limited.®
+          </h2>
+        </div>
+
+        <div className="lg:mx-auto">
           <h1 className="font-bold my-2 text-xl text-[#E77A18]">About</h1>
           <div>
             <div className="flex py-1 items-center gap-2">
@@ -55,13 +62,6 @@ const Footer = () => {
             <div className="flex  py-1 items-center gap-2">
               <MdEmail size={25} />{" "}
               <span className="font-semibold">galaxyisp9@gmail.com</span>
-            </div>
-            <div className="flex py-1 items-center gap-2">
-              <IoLocationSharp size={25} />{" "}
-              <span className="font-semibold">
-                office: p-1087, 1st Floor ,Lal Mills Chowk,Factory
-                Area,Faisalabad{" "}
-              </span>
             </div>
           </div>
         </div>

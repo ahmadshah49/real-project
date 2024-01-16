@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       <div className="px-4 z-40 h-20 p font-normal   fixed top-0  w-full bg-white/80 border-b text-black flex justify-evenly items-center">
-        <div className="flex justify-between items-center max-md:w-full max-md:justify-between w-[50%]">
-          <div>
+        <div className="flex justify-between max-md:w-full max-md:justify-between w-full">
+          <div className="flex gap-8 justify-start items-center">
             {nav ? (
               <Image
                 src={"/logo.PNG"}
@@ -28,26 +28,43 @@ const Navbar = () => {
                 className="w-[100px]  "
               />
             )}
+            <ul className="mx-auto  flex max-md:hidden font-bold">
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <a href="/#home">Home</a>
+              </li>
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <a href="#" className="disabled:">
+                  About
+                </a>
+              </li>
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <a href="/#prices">Prices</a>
+              </li>
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <a href="/#services">Services</a>
+              </li>
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <Link href={"/terms"}>Terms & Conditons</Link>
+              </li>
+              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+                <Link href={"/terms"}>Contact us</Link>
+              </li>
+            </ul>
           </div>
-
-          <div onClick={() => setNav((prev) => !prev)} className="md:hidden">
+          <Image
+            src={"/logo3.png"}
+            width={50}
+            height={50}
+            className="object-cover max-sm:hidden"
+          />
+          <div
+            onClick={() => setNav((prev) => !prev)}
+            className="md:hidden my-auto"
+          >
             {nav ? <IoClose size={25} /> : <IoMenu size={25} />}
           </div>
         </div>
-        <ul className="flex max-md:hidden font-bold">
-          <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-            <a href="/#home">Home</a>
-          </li>
-          <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-            <a href="/#prices">Prices</a>
-          </li>
-          <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-            <a href="/#services">Services</a>
-          </li>
-          <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-            <Link href={"/terms"}>Terms & Conditons</Link>
-          </li>
-        </ul>
+
         {/* <div className="flex justify-evenly max-md:hidden items-center w-[50%]">
           <p className="font-bold">24/7</p>
           <div className="font-bold">

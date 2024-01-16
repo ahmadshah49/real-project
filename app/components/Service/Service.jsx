@@ -4,11 +4,27 @@ import Image from "next/image";
 import { FiMonitor } from "react-icons/fi";
 import { PiTelevisionFill } from "react-icons/pi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
+import Bolls from "../bolls/bolls";
 
 const Services = () => {
   return (
-    <div id="services" className=" my-24  w-full h-full">
-      <h1 className="text-center text-6xl font-bold p text-[#E77A18]">
+    <div id="services" className=" my-36  w-full h-full">
+      <div className="flex items-center mt-16 justify-center max-sm:gap-4 px-4 gap-8">
+        <div className="w-40  h-40 max-sm:w-28 max-sm:h-28 text-white flex flex-col items-center justify-center bg-green-400 hover:invert transition-all ease-in-out delay-150 imgup  rounded-full">
+          <FiMonitor size={30} />
+          <h1 className="p-1">INTERNET</h1>
+        </div>
+        <div className="w-40 h-40 max-sm:w-28 max-sm:h-28 text-white flex flex-col items-center justify-center bg-red-400 hover:invert transition-all ease-in-out delay-150 imgdown rounded-full">
+          <PiTelevisionFill size={30} />
+          <h1 className="p-1">TV</h1>
+        </div>
+        <div className="w-40 h-40 max-sm:w-28 max-sm:h-28  text-white flex flex-col items-center justify-center bg-amber-500 hover:invert transition-all ease-in-out delay-150 imgup rounded-full">
+          <TbDeviceLandlinePhone size={30} />
+          <h1 className="p-1">PHONE</h1>
+        </div>
+      </div>
+      {/* <Bolls /> */}
+      <h1 className="text-center mt-6 text-6xl font-bold p text-[#E77A18]">
         Services
       </h1>
       <p className="py-8 px-4 text-center font-medium text-4xl max-sm:text-2xl p">
@@ -62,20 +78,6 @@ const Services = () => {
         </div>
         <div className="w-[50%] max-sm:w-full  flex items-center justify-center">
           <Image src={"/browser.png"} width={400} height={400} />
-        </div>
-      </div>
-      <div className="flex items-center mt-16 justify-center max-sm:gap-4 px-4 gap-8">
-        <div className="w-36 h-36 max-sm:w-h-24 max-sm:h-24 text-white flex flex-col items-center justify-center bg-green-400 hover:invert transition-all ease-in-out delay-150 imgup  rounded-full">
-          <FiMonitor size={30} />
-          <h1 className="p-1">INTERNET</h1>
-        </div>
-        <div className="w-36 h-36 max-sm:w-h-24 max-sm:h-24 text-white flex flex-col items-center justify-center bg-red-400 hover:invert transition-all ease-in-out delay-150 imgdown rounded-full">
-          <PiTelevisionFill size={30} />
-          <h1 className="p-1">TV</h1>
-        </div>
-        <div className="w-36 h-36 max-sm:w-h-24 max-sm:h-24 text-white flex flex-col items-center justify-center bg-amber-500 hover:invert transition-all ease-in-out delay-150 imgup rounded-full">
-          <TbDeviceLandlinePhone size={30} />
-          <h1 className="p-1">PHONE</h1>
         </div>
       </div>
     </div>
