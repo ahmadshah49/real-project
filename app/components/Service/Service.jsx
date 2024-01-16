@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FiMonitor } from "react-icons/fi";
 import { PiTelevisionFill } from "react-icons/pi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
-import Bolls from "../bolls/bolls";
 
 const Services = () => {
   return (
