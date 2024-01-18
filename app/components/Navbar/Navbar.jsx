@@ -50,13 +50,13 @@ const Navbar = () => {
                 <Link href={"/terms"}>Contact us</Link>
               </li>
             </ul>
+            <Image
+              src={"/logo3.png"}
+              width={50}
+              height={50}
+              className="object-cover max-sm:hidden"
+            />
           </div>
-          <Image
-            src={"/logo3.png"}
-            width={50}
-            height={50}
-            className="object-cover max-sm:hidden"
-          />
           <div
             onClick={() => setNav((prev) => !prev)}
             className="md:hidden my-auto"

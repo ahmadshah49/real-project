@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 import Slider from "../Slider/Slider";
 import Image from "next/image";
 import gsap from "gsap";
-let timeline=gsap.timeline();
+let timeline = gsap.timeline();
 const Hero = () => {
   return (
     <div
@@ -61,7 +61,7 @@ const Hero = () => {
               pera={
                 "Step through the Gateway to Digital Connectivity, where seamless internet access meets limitless possibilities. "
               }
-              src={"/isp.png"}
+              src={"/mobile.png"}
               width={600}
               height={600}
             />
