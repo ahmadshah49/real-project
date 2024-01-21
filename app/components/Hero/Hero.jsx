@@ -61,9 +61,9 @@ const Hero = () => {
               pera={
                 "Step through the Gateway to Digital Connectivity, where seamless internet access meets limitless possibilities. "
               }
-              src={"/mobile.png"}
-              width={600}
-              height={600}
+              src={"/wifi.jpg"}
+              width={400}
+              height={400}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -72,7 +72,7 @@ const Hero = () => {
               pera={
                 "Meet the 'Constant Companion'  our commitment to providing 24/7 support. Just like the reliable presence of a trusted friend.  "
               }
-              src={"/24.png"}
+              src={"/24.jpg"}
               width={400}
               height={400}
             />

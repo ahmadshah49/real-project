@@ -28,39 +28,45 @@ const Navbar = () => {
                 className="w-[100px]  "
               />
             )}
-            <ul className="mx-auto  flex max-md:hidden font-bold">
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <a href="/#home">Home</a>
-              </li>
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <a href="#" className="disabled:">
-                  About
-                </a>
-              </li>
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <a href="/#prices">Prices</a>
-              </li>
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <a href="/#services">Services</a>
-              </li>
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <Link href={"/terms"}>Terms & Conditons</Link>
-              </li>
-              <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
-                <Link href={"/terms"}>Contact us</Link>
-              </li>
-            </ul>
+          </div>
+          <ul className="mx-auto  flex items-center  max-md:hidden font-bold">
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <a href="/#home">Home</a>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <a href="#" className="disabled:">
+                About
+              </a>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <a href="/#prices">Prices</a>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <a href="/#services">Services</a>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <Link href={"/terms"}>Terms & Conditons</Link>
+            </li>
+            <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
+              <Link href={"/terms"}>Contact us</Link>
+            </li>
             <Image
               src={"/logo3.png"}
-              width={50}
-              height={50}
-              className="object-cover max-sm:hidden"
+              width={70}
+              height={70}
+              className="object-cover ml-10 max-sm:hidden imgdown"
             />
-          </div>
+          </ul>
           <div
             onClick={() => setNav((prev) => !prev)}
             className="md:hidden my-auto"
           >
+            <Image
+              src={"/logo3.png"}
+              width={70}
+              height={70}
+              className="object-cover ml-10 max-sm:hidden imgdown"
+            />
             {nav ? <IoClose size={25} /> : <IoMenu size={25} />}
           </div>
         </div>
