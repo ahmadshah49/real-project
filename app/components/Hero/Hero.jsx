@@ -21,7 +21,7 @@ const Hero = () => {
       id="home"
       className=" color-change-2x relative overflow-hidden w-full   h-[80vh] max-sm:h-screen"
     >
-      <div className="absolute inset-0 wow3 flex items-center   ">
+      <div className="absolute inset-0  flex items-center   ">
         <Swiper
           className="w-full max-sm:h-[100vh] h-[80vh]"
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
