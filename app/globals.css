@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 .bgImg {
-  background-image: url("../public/bg.jpg") no-repeat;
+  /* background-image: url("../public/bg.jpg") no-repeat; */
   height: 100vh;
 }
 * {

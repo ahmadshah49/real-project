@@ -38,14 +38,21 @@ const Footer = () => {
         </div>
         <div className="lg:mx-auto">
           <Image
-            src={"/logo.PNG"}
+            src={"/changelogo.jpg"}
             width={150}
-            className="w-40"
+            className="w-40 mx-auto"
             height={150}
             alt="logo"
           />
-          <h2 className="text-xl font-bold text-[#E77A18] max-sm:py-4">
-            Galaxy ISP Private Limited.®
+          <Image
+            src={"/fun.png"}
+            width={150}
+            className="w-40 -mt-3 mx-auto"
+            height={150}
+            alt="logo"
+          />
+          <h2 className="text-xl font-bold my-4 text-[#E77A18] max-sm:py-4">
+            Galaxy ISP Private Limited.
           </h2>
         </div>
 
@@ -56,7 +63,7 @@ const Footer = () => {
               <MdLocalPhone size={25} />{" "}
               <div className="flex flex-col">
                 <span className="font-semibold">041 2638793</span>
-                <span className="font-semibold">0323 1110777</span>
+                <span className="font-semibold">(+92)323 1110777</span>
               </div>
             </div>
             <div className="flex  py-1 items-center gap-2">

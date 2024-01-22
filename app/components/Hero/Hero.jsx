@@ -40,9 +40,10 @@ const Hero = () => {
               src={"/Frame.svg"}
               width={1500}
               height={1500}
-              className="w-full h-full mx-auto max-sm:h-[50%]"
+              className="w-full relative h-full mx-auto max-sm:h-[50%]"
             />
-            <h1 className="text-4xl text-[#E77A18]  font-black line-height-8 px-4">
+
+            <h1 className="text-5xl mt-10 text-[#E77A18]  font-black line-height-8 px-4">
               Most Popular Internet Service Provider Company in Faisalabad
             </h1>
             {/* <Slider

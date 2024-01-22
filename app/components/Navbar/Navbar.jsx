@@ -15,14 +15,14 @@ const Navbar = () => {
           <div className="flex gap-8 justify-start items-center">
             {nav ? (
               <Image
-                src={"/logo.PNG"}
+                src={"/logo.png"}
                 width={800}
                 height={800}
                 className="w-[100px] hidden  "
               />
             ) : (
               <Image
-                src={"/logo.PNG"}
+                src={"/logo.png"}
                 width={800}
                 height={800}
                 className="w-[100px]  "
@@ -89,7 +89,7 @@ const Navbar = () => {
         }
       >
         <div>
-          <Image src={"/logo.PNG"} width={100} height={100} />
+          <Image src={"/logo.png"} width={100} height={100} />
           <ul className="my-8 flex flex-col gap-8 font-bold">
             <li className="cursor-pointer py-2 transiton-all  ease-in-out px-4 rounded-3xl hover:bg-[#91d0f7]">
               <a href="/#home">Home</a>
