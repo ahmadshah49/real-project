@@ -40,14 +40,14 @@ const Footer = () => {
           <Image
             src={"/changelogo.jpg"}
             width={150}
-            className="w-40 mx-auto"
+            className="w-40 mx-auto max-sm:mx-0"
             height={150}
             alt="logo"
           />
           <Image
             src={"/fun.png"}
             width={150}
-            className="w-40 -mt-3 mx-auto"
+            className="w-40 -mt-3 mx-auto max-sm:mx-0"
             height={150}
             alt="logo"
           />
