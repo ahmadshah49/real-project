@@ -10,11 +10,7 @@
 * {
   scroll-behavior: smooth;
 }
-.logo {
-  background: url(../public/logo.PNG) no-repeat center/cover;
-  height: 100vh;
-  /* background-size: contain; */
-}
+
 .h {
   background: url(../public/home.png) no-repeat center center/cover;
   /* height: 100vh; */
